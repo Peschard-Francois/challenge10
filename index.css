@@ -1,12 +1,27 @@
+:root{
+
+    --primarycolor :#ff8401;
+    --btn-bg-color :#268bf7;
+    --dark: black;
+    --light:white;
+    --font-title:'Times New Roman', Times, serif;
+    --p-fontsize:16px;
+    --font-body:'impact';
+    --btn-fontsize:16px;
+    
+}
+
+
+
 body {
     margin: 0;
-    font-family: arial;
+    font-family: var(--font-body);
   }
   
   .navbar {
     display: flex;
-    background-color: #f7289a;
-    color: white;
+    background-color: var(--primarycolor,red);
+    color: var(--light,white);
     padding: 16px;
   }
   
@@ -17,28 +32,28 @@ body {
   }
   
   h1 {
-    color: #f7289a;
+    color:var(--primarycolor,red);
     font-size: 24pt;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--font-title);
   }
   
   p {
-    font-size: 16pt;
-    color: black;
+    font-size: var(--p-fontsize,15px);
+    color:var(--dark,black);
   }
   
   a:any-link {
-    color: white;
+    color:var(--light,white);
     margin-left: 8px;
     text-decoration: none;
   }
   
   .btn {
-    background-color: #26f784;
-    color: black;
+    background-color:var(--btn-bg-color);
+    color: var(--dark);
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 16pt;
+    font-size: var(--btn-fontsize);
     cursor: pointer;
   }
   
